@@ -1,0 +1,4 @@
+instala las librerías
+pip install -r requirements.txt
+
+Python app.py
