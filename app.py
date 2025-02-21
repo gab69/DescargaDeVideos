@@ -29,6 +29,7 @@ def descargar():
             'format': calidad,  # Usar la calidad seleccionada
             'outtmpl': os.path.join("downloads", "%(title)s.%(ext)s"),  # Nombre del archivo con el título del video
             'merge_output_format': 'mp4',  # Asegurar formato MP4
+             'cookiefile': 'cookies.txt',  # Usar el archivo de cookies
         }
 
         with yt_dlp.YoutubeDL(opciones) as ydl:
